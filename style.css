@@ -11,7 +11,7 @@
 }
 
 /*Body design & layout*/
-.column {
+body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   font-size: 1.3rem;
@@ -52,19 +52,19 @@ a:hover {
   color: var(--off-white);
 }
 
-main a {
+.main__hero a {
   color: var(--danger-color);
 }
 
 /*I'm not sure what this particular sections of commands do. When I omit them, nothing happens. To be honest, I'm not sure how to apply BEM if I can't figure out what this does.*/
-main > article, nav{
+.main__hero > article, nav{
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 /*TOP NAVIGATION*/
-nav {
+.header__nav {
   display: flex;
 }
 
@@ -119,12 +119,14 @@ section.hero > button {
   padding: 48px 96px;
 }
 
-main p {
+/*all <p> classes*/
+.article__p1, .article__p2, .article__p3 {
   line-height: 1.75;
-  margin-bottom: 48px;;
+  margin-bottom: 48px;
 }
 
-main > article img {
+/*Square image midway down inside article and hero*/
+.article__img {
   float: left;
   width: 300px;
   height: auto;
